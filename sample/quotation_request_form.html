@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotation Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            padding: 40px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #0a74da;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #075bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Request a Quotation</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="institution">School/College/University</label>
+            <input type="text" id="institution" name="institution" placeholder="Institution name" required>
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service">
+                <option value="lms">Learning Management System</option>
+                <option value="cms">Content Management System</option>
+                <option value="sls">Student Lifecycle System</option>
+                <option value="web">Website Development</option>
+                <option value="seo">SEO & Marketing</option>
+                <option value="support">IT Support & Troubleshooting</option>
+            </select>
+
+            <label for="details">Project Details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Describe your requirements..."></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>

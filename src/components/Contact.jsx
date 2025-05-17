@@ -2,11 +2,13 @@ import { useContext, useState } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
 const Contact = () => {
-  const { currentTheme } = useContext(ThemeContext);
+  // Using context for theme-aware styling
+  useContext(ThemeContext);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    institution: '',
+    service: 'lms',
     message: ''
   });
   const [formStatus, setFormStatus] = useState(null);
@@ -28,7 +30,8 @@ const Contact = () => {
       setFormData({
         name: '',
         email: '',
-        subject: '',
+        institution: '',
+        service: 'lms',
         message: ''
       });
       setFormStatus(null);
@@ -40,10 +43,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            Get in <span className="text-primary">Touch</span>
+            Request a <span className="text-primary">Quotation</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Ready to elevate your digital presence? Contact us today to discuss how our services can help your business grow.
+            Ready to transform your educational institution with modern technology? Contact us today to discuss your specific requirements and get a customized solution.
           </p>
         </div>
 
@@ -109,7 +112,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Send us a message</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Request a Quotation</h3>
               <form onSubmit={handleSubmit} className="space-y-6 glass-effect p-4 rounded-lg">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">Full Name</label>
@@ -124,9 +127,6 @@ const Contact = () => {
                       placeholder="Your name"
                       required
                     />
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <span className="text-gray-500 sm:text-sm"></span>
-                    </div>
                   </div>
                 </div>
                 <div>
@@ -139,34 +139,47 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white shadow-sm"
-                      placeholder="your.email@example.com"
+                      placeholder="you@example.com"
                       required
                     />
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <span className="text-gray-500 sm:text-sm"></span>
-                    </div>
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">Subject</label>
+                  <label htmlFor="institution" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">School/College/University</label>
                   <div className="relative">
                     <input
                       type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
+                      id="institution"
+                      name="institution"
+                      value={formData.institution}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white shadow-sm"
-                      placeholder="How can we help you?"
+                      placeholder="Institution name"
                       required
                     />
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <span className="text-gray-500 sm:text-sm"></span>
-                    </div>
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">Message</label>
+                  <label htmlFor="service" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">Select Service</label>
+                  <div className="relative">
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white shadow-sm"
+                    >
+                      <option value="lms">Learning Management System</option>
+                      <option value="cms">Content Management System</option>
+                      <option value="sls">Student Lifecycle System</option>
+                      <option value="analytics">Educational Analytics & Reporting</option>
+                      <option value="mobile">Educational Mobile Apps</option>
+                      <option value="support">IT Support & Troubleshooting</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">Project Details</label>
                   <div className="relative">
                     <textarea
                       id="message"
@@ -175,7 +188,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white shadow-sm"
-                      placeholder="Tell us about your project or inquiry..."
+                      placeholder="Describe your requirements..."
                       required
                     ></textarea>
                   </div>
@@ -185,11 +198,11 @@ const Contact = () => {
                     type="submit"
                     className="w-full btn-primary py-3 px-6 rounded-lg text-lg font-semibold"
                   >
-                    {formStatus === 'success' ? 'Message Sent! ✓' : 'Send Message'}
+                    {formStatus === 'success' ? 'Request Submitted! ✓' : 'Submit Request'}
                   </button>
                   {formStatus === 'success' && (
                     <div className="mt-4 p-3 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-center">
-                      Thank you for your message! We'll get back to you soon.
+                      Thank you for your quotation request! We'll get back to you with a customized solution shortly.
                     </div>
                   )}
                 </div>

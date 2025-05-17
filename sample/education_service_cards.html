@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stagify Education Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .service-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .service-title {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #1a1a1a;
+        }
+
+        .service-desc {
+            margin: 0 0 14px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .service-list li::before {
+            content: "✔︎";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0a74da;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">📚</div>
+            <h3 class="service-title">Learning Management System</h3>
+            <p class="service-desc">
+                Deploy and customize a full-featured LMS to manage courses, assessments, and reporting.
+            </p>
+            <ul class="service-list">
+                <li>Install & configure Moodle, Canvas or Google Classroom</li>
+                <li>Zoom, Teams & Meet live-class integration</li>
+                <li>Grades, quizzes & progress tracking modules</li>
+                <li>Automated notifications via email & webhook</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📝</div>
+            <h3 class="service-title">Content Management System</h3>
+            <p class="service-desc">
+                Easy-to-use CMS for news, events, and departmental updates with granular user roles.
+            </p>
+            <ul class="service-list">
+                <li>WordPress, Drupal or headless CMS</li>
+                <li>Drag-and-drop page builders</li>
+                <li>Multi-site & microsite support</li>
+                <li>SEO tools & workflow approvals</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3 class="service-title">Student Lifecycle System</h3>
+            <p class="service-desc">
+                A unified platform to manage admissions, enrollment, retention, and alumni relations.
+            </p>
+            <ul class="service-list">
+                <li>Admissions & application workflow</li>
+                <li>Orientation & onboarding modules</li>
+                <li>Retention analytics & alerts</li>
+                <li>CRM & alumni engagement integration</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

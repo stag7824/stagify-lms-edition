@@ -3,116 +3,116 @@
 export const services = [
   {
     id: 1,
-    title: 'Frontend Development',
-    description: 'Beautiful, mobile-friendly websites built with the latest technology to engage your customers.',
-    icon: 'code',
+    title: 'Learning Management System',
+    description: 'Deploy and customize a full-featured LMS to manage courses, assessments, and reporting for your educational institution.',
+    icon: 'book',
     features: [
-      'Fast, interactive websites',
-      'Mobile-friendly design for all devices',
-      'Smooth, engaging animations',
-      'Fast-loading pages that keep visitors engaged',
-      'Modern design that stands out from competitors'
+      'Install & configure Moodle, Canvas or Google Classroom',
+      'Zoom, Teams & Meet live-class integration',
+      'Grades, quizzes & progress tracking modules',
+      'Automated notifications via email & webhook',
+      'Mobile-responsive learning experiences'
     ],
     caseStudies: [
       {
-        name: 'Web3 Dashboard',
-        result: 'Increased user engagement by 78%'
+        name: 'University LMS Implementation',
+        result: 'Increased student engagement by 84%'
       },
       {
-        name: 'SaaS Platform Redesign',
-        result: 'Reduced bounce rate by 65%'
+        name: 'K-12 District Learning Platform',
+        result: 'Improved course completion rates by 62%'
       }
     ]
   },
   {
     id: 2,
-    title: 'Mobile App Development',
-    description: 'Custom mobile apps that help you reach customers on their phones and provide a seamless experience.',
-    icon: 'smartphone',
+    title: 'Content Management System',
+    description: 'Easy-to-use CMS for news, events, and departmental updates with granular user roles for educational institutions.',
+    icon: 'edit',
     features: [
-      'Apps for both iPhone and Android devices',
-      'Cost-effective apps that work across all platforms',
-      'Apps that work without an internet connection',
-      'Customer engagement through notifications',
-      'Strategies to increase app downloads'
+      'WordPress, Drupal or headless CMS solutions',
+      'Drag-and-drop page builders for staff',
+      'Multi-site & microsite support for departments',
+      'SEO tools & workflow approvals',
+      'Responsive designs for all devices'
     ],
     caseStudies: [
       {
-        name: 'Fintech Mobile App',
-        result: '250,000+ downloads in first quarter'
+        name: 'College Website Redesign',
+        result: 'Increased application submissions by 45%'
       },
       {
-        name: 'Healthcare Platform',
-        result: '98% user satisfaction rating'
+        name: 'School District Portal',
+        result: '92% user satisfaction among staff and parents'
       }
     ]
   },
   {
     id: 3,
-    title: 'Backend Development',
-    description: 'Powerful systems behind your website that ensure it runs smoothly, securely, and can handle growth.',
-    icon: 'edit',
+    title: 'Student Lifecycle System',
+    description: 'A unified platform to manage admissions, enrollment, retention, and alumni relations throughout the student journey.',
+    icon: 'share',
     features: [
-      'Reliable server technology',
-      'Scalable systems that grow with your business',
-      'Fast and secure data storage solutions',
-      'Connections with other business systems',
-      'Cloud hosting for reliability and performance'
+      'Admissions & application workflow',
+      'Orientation & onboarding modules',
+      'Retention analytics & at-risk student alerts',
+      'CRM & alumni engagement integration',
+      'Event management for graduation & reunions'
     ],
     caseStudies: [
       {
-        name: 'E-commerce Backend Overhaul',
-        result: '400% increase in transaction capacity'
+        name: 'Private University SLS Implementation',
+        result: '38% improvement in student retention'
       },
       {
-        name: 'Real-time Analytics Platform',
-        result: 'Reduced processing time by 85%'
+        name: 'Community College Admissions System',
+        result: 'Application processing time reduced by 65%'
       }
     ]
   },
   {
     id: 4,
-    title: 'Full-Stack Development',
-    description: 'Complete website and app solutions that handle everything from design to data, giving you a seamless experience.',
-    icon: 'share',
+    title: 'Educational Analytics & Reporting',
+    description: 'Data-driven insights to improve educational outcomes, track institutional performance, and enhance decision making.',
+    icon: 'chart',
     features: [
-      'End-to-end project management',
-      'Cost-effective cloud solutions',
-      'Automated testing and deployment',
-      'Enterprise-grade security protection',
-      'Systems built for long-term growth'
+      'Custom dashboards for administrators & faculty',
+      'Learning analytics for student performance',
+      'Predictive modeling for at-risk students',
+      'Compliance & accreditation reporting',
+      'Data visualization for stakeholder presentations'
     ],
     caseStudies: [
       {
-        name: 'Enterprise SaaS Platform',
-        result: 'Supported 10x user growth without downtime'
+        name: 'State University Analytics Platform',
+        result: 'Identified intervention needs 3 weeks earlier'
       },
       {
-        name: 'Startup MVP Development',
-        result: 'Launched in 6 weeks, secured $2M funding'
+        name: 'Private School Performance Tracking',
+        result: 'Improved graduation rates by 24%'
       }
     ]
   },
   {
     id: 5,
-    title: 'UI/UX Design',
-    description: 'User-friendly designs that make your website easy to navigate and visually appealing to keep customers coming back.',
-    icon: 'palette',
+    title: 'Educational Mobile Apps',
+    description: 'Custom mobile applications that extend your digital campus and enhance the learning experience for students on the go.',
+    icon: 'smartphone',
     features: [
-      'Attractive, intuitive website designs',
-      'Visual mockups to preview your site',
-      'Consistent design elements across your brand',
-      'User testing to ensure ease-of-use',
-      'Complete brand identity development'
+      'Native apps for iOS and Android',
+      'Campus maps and navigation',
+      'Push notifications for course updates',
+      'Offline access to learning materials',
+      'Student ID and mobile credentials'
     ],
     caseStudies: [
       {
-        name: 'SaaS Dashboard Redesign',
-        result: '40% reduction in user support tickets'
+        name: 'University Mobile App',
+        result: '92% adoption rate among students'
       },
       {
-        name: 'E-commerce UX Overhaul',
-        result: '25% increase in conversion rate'
+        name: 'Educational Resource App',
+        result: '47% increase in digital resource usage'
       }
     ]
   }
@@ -121,23 +121,23 @@ export const services = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    position: 'CEO, TechStart',
-    content: 'Working with this team transformed our online presence. The web development and SEO services delivered results beyond our expectations.',
+    name: 'Dr. Sarah Johnson',
+    position: 'Dean of Digital Learning, Pacific University',
+    content: 'Stagify transformed our online learning capabilities. The LMS implementation and faculty training program exceeded our expectations and significantly improved student engagement.',
     avatar: 'avatar1'
   },
   {
     id: 2,
     name: 'Michael Chen',
-    position: 'Marketing Director, GrowthBrand',
-    content: 'The social media strategy completely revitalized our brand. We\'re seeing engagement like never before and our follower count continues to grow.',
+    position: 'IT Director, Northwoods School District',
+    content: 'The student lifecycle system has revolutionized our admissions and student support processes. We\'re now able to identify at-risk students much earlier and provide timely interventions.',
     avatar: 'avatar2'
   },
   {
     id: 3,
-    name: 'Jessica Williams',
-    position: 'Founder, AppInnovate',
-    content: 'The app development process was seamless from start to finish. The team delivered a product that our users love, on time and on budget.',
+    name: 'Dr. Jessica Williams',
+    position: 'President, Community College of Innovation',
+    content: 'The analytics dashboard implementation has given us insights we never had before. Our decision-making is now data-driven, and we\'ve seen measurable improvements in student outcomes as a result.',
     avatar: 'avatar3'
   }
 ];

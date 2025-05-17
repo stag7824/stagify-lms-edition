@@ -45,12 +45,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -left-6 -top-6 w-20 h-20 bg-primary/20 rounded-full filter blur-xl animate-pulse-slow"></div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white relative">
-                <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 animate-gradient-shift bg-[length:200%_auto]">Web & App</span> <br />
-                <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-secondary animate-gradient-shift bg-[length:200%_auto]">Development</span>
+                <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 animate-gradient-shift bg-[length:200%_auto]">Educational</span> <br />
+                <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-secondary animate-gradient-shift bg-[length:200%_auto]">Technology</span>
               </h1>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-xl">
-              We turn your ideas into high-impact websites and mobile apps that help your business succeed online and attract more customers.
+              We deliver powerful learning management systems and educational software that transform how institutions teach, engage students, and manage the entire learning lifecycle.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="#services" className="btn-primary group" onClick={(e) => {
@@ -75,21 +75,20 @@ const Hero = () => {
             
             <div className="mt-12 flex items-center space-x-4">
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">JS</div>
-                <div className="w-10 h-10 rounded-full bg-cyan-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">R</div>
-                <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">V</div>
-                <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">F</div>
+                <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">M</div>
+                <div className="w-10 h-10 rounded-full bg-cyan-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">C</div>
+                <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">GC</div>
+                <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-900">SC</div>
               </div>
-              <span className="text-sm text-gray-600 dark:text-gray-400">Powered by modern frameworks</span>
+              <span className="text-sm text-gray-600 dark:text-gray-400">Leading LMS platforms supported</span>
             </div>
           </div>
           
-          <div className="md:w-1/2 relative">
-            <div className="cyber-border">
+          <div className="md:w-1/2 relative">              <div className="cyber-border">
               <div className="relative z-10 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:rotate-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Web Development" 
+                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Educational Technology Platform" 
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end">
@@ -97,7 +96,7 @@ const Hero = () => {
                     <div className="flex justify-between items-center">
                       <div>
                         <div className="text-xs text-primary font-semibold mb-1">FEATURED PROJECT</div>
-                        <div className="text-white font-bold">Web3 Dashboard Interface</div>
+                        <div className="text-white font-bold">Comprehensive LMS Implementation</div>
                       </div>
                       <div className="flex space-x-2">
                         <span className="px-2 py-1 bg-white/10 backdrop-blur-sm rounded text-xs text-white">React</span>
